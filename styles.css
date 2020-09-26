@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 0;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.btn-success {
+    margin: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(192, 4, 230);
+    margin-bottom: 45px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shipping Calculator</title>
+</head>
+
+<body>
+    <h1>Mark this ship up!</h1>
+    <img class="box" src="/box.png" alt="box">
+
+    <form>
+        <div class="form-group">
+            <label>Enter Price:</label>
+            <input class="form-control" placeholder="$" id="price" type="price" data-validetta="required,price"
+                required="">
+            <label>Enter Percentage Mark-Up:</label>
+            <input class="form-control" placeholder="%" id="markUp" type="text" required="">
+            <button class="btn btn-success" type="button" onclick="getPrice()"> Get total: </button>
+            <input class="form-control" placeholder="$" id="total" type="text" required="">
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+    getPrice = function () {
+        var numVal1 = Number(document.getElementById("price").value);
+        var numVal2 = Number(document.getElementById("markUp").value) / 100;
+
+        var totalValue = numVal1 + (numVal1 * numVal2)
+        document.getElementById("total").value = totalValue.toFixed(2);
+    }
+</script>
+
+</html>
